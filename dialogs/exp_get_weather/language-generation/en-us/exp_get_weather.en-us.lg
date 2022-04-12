@@ -1,0 +1,18 @@
+[import](common.lg)
+
+# SendActivity_wGKYUY()
+[Activity
+    Text = ${SendActivity_wGKYUY_text()}
+]
+
+# SendActivity_wGKYUY_text()
+- Let's check the weather
+# NumberInput_Prompt_mGFdvT()
+[Activity
+    Text = ${NumberInput_Prompt_mGFdvT_text()}
+]
+
+# NumberInput_Prompt_mGFdvT_text()
+- What is your age?
+- how old are you?
+- ${turn.lastresult}

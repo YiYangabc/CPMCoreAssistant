@@ -1,4 +1,7 @@
 {
   "$kind": "Microsoft.CrossTrainedRecognizerSet",
-  "recognizers": []
+  "recognizers": [
+    "CPMCoreAssistant.lu",
+    "CPMCoreAssistant.qna"
+  ]
 }

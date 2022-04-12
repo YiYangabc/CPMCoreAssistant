@@ -41,3 +41,384 @@
 - check my account balance
 - do unicorns really exist
 - duck
+
+# Goodbye
+- Bye.
+- Goodbye.
+- See you later.
+- Take it easy.
+
+
+> # Intent definitions
+
+# Cascade
+- book holiday
+- cascade
+- change contact details
+- changing address
+- moved house
+- moved residence
+- problems with cascade
+- tar
+- time attendance reporting
+- update account
+- update details
+- update phone number
+
+
+# ChangePassword
+- change {@Device=laptop} password
+- change my login
+- forgot password
+- password
+- password change
+- password not working
+- password reset
+- update password
+
+
+@ intent ChangePassword usesFeatures Computer,Device,Login
+
+# DeviceEncryption
+- bitlocker
+- configure bitlocker password
+- configure {@Device=device} encryption
+- i want to encrypt my {@Device=device}
+- i want to encrypt my {@Device=laptop}
+- i want to set up encryption
+- {@Device=laptop} encryption
+- {@Device=machine} encryption
+- sophos
+- windows bitlocker
+- windows encryption
+
+
+@ intent DeviceEncryption usesFeatures Computer,Encrpytion,Device
+
+# DeviceLock
+- can't get into my {@Device=laptop}
+- computrace
+- {@Device=device} freeze
+- locked {@Device=computer}
+- locked {@Device=laptop}
+- locked {@Device=machine}
+- my {@Device=computer} is locked
+- my {@Device=device} is frozen
+- unencrypted
+
+
+@ intent DeviceLock usesFeatures Lock,Computer,Device
+
+# Genesys
+- bad line genesys
+- genesys call quality
+- genesys calls too quiet
+- genesys microphone not found
+- issues with calls in genesys
+- microphone problems with genesys
+- no sound
+- no sound in genesys
+- poor call quality
+
+
+@ intent Genesys usesFeatures Computer,Genesys
+
+# GenesysLogin
+- can't log into genesys
+- can't log into purecloud
+- genesys sign in
+- log into genesys
+- log into purecloud
+- purecloud sign in
+- sign into genesys
+- sign into purecloud
+
+
+@ intent GenesysLogin usesFeatures Login,Genesys
+
+# Intune
+- {@Device=android}
+- broken {@Device=ipad}
+- broken {@Device=mobile}
+- broken {@Device=phone}
+- broken {@Device=tablet}
+- can't get into email
+- can't get into teams
+- cannot get into email
+- cannot get into teams
+- email on {@Device=phone}
+- {@Device=ios}
+- {@Device=ipad}
+- {@Device=iphone}
+- mam
+- {@Device=mobile}
+- {@Device=mobile phone}
+- new {@Device=mobile}
+- new {@Device=mobile phone}
+- new {@Device=phone}
+- new {@Device=tablet}
+- omnicom mam
+- {@Device=phone}
+- problem with my {@Device=phone}
+- problem with my {@Device=tablet}
+- teams on {@Device=phone}
+
+
+@ intent Intune usesFeatures Device,Mobile
+
+# LeadTimes
+- how long will it take to get a {@Device=laptop}
+- how long will it take to get a new {@Device=phone}
+- new starter kit lead time
+- what is the lead time on a {@Device=laptop}
+- what is the lead time on a {@Device=mobile}
+- what is the lead time on a {@Device=phone}
+
+
+@ intent LeadTimes usesFeatures Computer,Device,Mobile,datetimeV2
+
+# Mailbox
+- access shared mailbox
+- get a mailbox
+- how to add a mailbox
+- mailbox access
+- mailbox addition
+- manually add a mailbox
+- map mailbox
+- missing mailbox
+- outlook mailbox
+- remove from mailbox
+- shared mailbox
+
+
+@ intent Mailbox usesFeatures email,mailbox
+
+# MFAs
+- can't get into training
+- can't sign into office
+- change microsoft mfa
+- change office mfa
+- mfa
+- microsoft mfa
+- o365 mfa
+- office mfa
+- okta verify
+- reset mfa
+- reset okta
+- reset okta verify
+
+
+@ intent MFAs usesFeatures Computer,MFA,Login,Microsoft,Microsoft
+
+# MicrosoftOffice
+- issue with {@Microsoft=o365}
+- lost my {@Microsoft=office} license
+- problem with {@Microsoft=excel}
+- problem with {@Microsoft=microsoft office}
+- problem with {@Microsoft=powerpoint}
+- problem with {@Microsoft=word}
+
+
+@ intent MicrosoftOffice usesFeatures Computer,Microsoft,Microsoft
+
+# NewProject
+- new business
+- new client
+- new project
+- project request
+- set up new campaign
+
+
+@ intent NewProject usesFeatures Computer,Project
+
+# OpenTicket
+- add to a distribution group
+- change a distribution group
+- distribution group
+- file share
+- folder
+- folder access
+- i can't access a folder
+- i have an issue
+- i need to access a folder
+- i want to open a ticket
+- incident
+- it ticket
+- manager
+- open ticket
+- operator
+- permissions
+- problem
+- remove from a distribution group
+- report a problem
+- report an issue
+- request fulfillment app
+- s drive
+- shared drive
+- sop
+- t drive
+- team leader
+- triage
+- troubleshooting
+
+
+@ intent OpenTicket usesFeature Computer
+
+# Phishing
+- malware
+- phishing
+- report email
+- report phishing
+- report spam
+- report suspicious email
+- weird email
+
+
+@ intent Phishing usesFeatures Computer,email
+
+# PopUps
+- chrome pop ups
+- disable pop ups
+- make pop ups show
+- pop up blocker
+- pop ups blocked
+- popups
+
+
+@ intent PopUps usesFeatures Computer,Popups
+
+# RetentionPolicy
+- email disappeared
+- email retention policy
+- missing emails
+- retention policy
+- teams messages disappeared
+- teams retention policy
+- where are my emails
+
+
+@ intent RetentionPolicy usesFeatures Computer,email
+
+# Salesforce
+- i can't log into salesforce
+- sales force login
+- salesforce login
+
+
+@ intent Salesforce usesFeatures Computer,Login
+
+# UniflowPrint
+- add printer
+- how do i print in the office
+- how to print
+- print in thame
+- printing in the office
+- uniflow
+
+
+@ intent UniflowPrint usesFeatures Computer,Print
+
+# WFH Device
+- home computer
+- setup purecloud
+- wfh
+- wfh laptop
+- work from home
+
+
+@ intent "WFH Device" usesFeatures Computer,Device
+
+# WiFi
+- barcelona {@Wifi=wifi}
+- cpm4clients
+- {@Wifi=internet} login
+- ireland {@Wifi=wifi}
+- {@Device=laptop} {@Wifi=internet}
+- staff password
+- staff {@Wifi=wifi}
+- staff {@Wifi=wifi} password
+- thame {@Wifi=wifi}
+- warrington {@Wifi=wifi}
+- {@Wifi=wifi}
+- {@Wifi=wifi} pasword
+- {@Wifi=wireless internet}
+
+
+@ intent WiFi usesFeatures Computer,Login,Wifi,Wifi
+
+# Yubico
+- {@Device=computer} token
+- configure mfa with yubikey
+- hardware authentication
+- {@Device=laptop} key
+- multi factor authentication
+- ubk
+- yubico
+- yubikey
+
+
+@ intent Yubico usesFeatures Computer,Yubikey,MFA
+
+> # Entity definitions
+
+@ ml Device usesFeature Computer
+
+@ ml Microsoft
+
+@ ml Wifi
+
+
+> # PREBUILT Entity definitions
+
+@ prebuilt datetimeV2
+
+@ prebuilt email
+
+
+> # Phrase list definitions
+
+@ phraselist Lock(interchangeable) disabledForAllModels = 
+	- freeze,lock,locked,frozen,unecrypted,encrpyted
+
+@ phraselist Computer(interchangeable) disabledForAllModels = 
+	- device,laptop,computer,notebook,workstation,desktop,machine
+
+@ phraselist Encrpytion(interchangeable) disabledForAllModels = 
+	- encoded,encrypt,encryption,bitlocker
+
+@ phraselist Yubikey(interchangeable) disabledForAllModels = 
+	- hardware token,token,yubico,yubikey,ubk,key
+
+@ phraselist MFA(interchangeable) disabledForAllModels = 
+	- multifactor,multi-factor,mfa,mutlifactor identification,multifactor authentication,mutli-factor identifaction,multi-factor authentication,multi factor,multi factor authentication,multi factor identification
+
+@ phraselist Login(interchangeable) disabledForAllModels = 
+	- sign in,sign-in,log on,logon,signin,log-on,login,log in,get in,log into,sign into,get into,password,access
+
+@ phraselist Genesys(interchangeable) disabledForAllModels = 
+	- genesys,purecloud,telephony
+
+@ phraselist Mobile(interchangeable) disabledForAllModels = 
+	- mobile,phone,tablet,ipad,android,ios,cell,cellphone,mobile phone
+
+@ phraselist Microsoft(interchangeable) disabledForAllModels = 
+	- Microsoft,Office,PowerPoint,Excel,Word,Outlook,O365
+
+@ phraselist Print(interchangeable) disabledForAllModels = 
+	- print,printing,printer,inkjet,scanner,copier,copy machine,print machine,printers,scanners,copiers,copy machines,inkjets,uniflow
+
+@ phraselist Popups(interchangeable) disabledForAllModels = 
+	- pop-up,popup,popups,pop-ups,ads,adverts,advertisements,advertisement,advert,ad
+
+@ phraselist Wifi(interchangeable) disabledForAllModels = 
+	- wifi,internet,wireless internet
+
+@ phraselist Project(interchangeable) disabledForAllModels = 
+	- client,project,business,campaign,request,work,work request
+
+@ phraselist mailbox(interchangeable) disabledForAllModels = 
+	- mailbox,postbox,letter box,letterbox,post box,post office box,letter-box,mail box,mail slot,post,po box,mail drop,mailboxes,post-office box,letter drop
+
+> # List entities
+
+> # RegEx entities

@@ -1,18 +1,8 @@
 [import](common.lg)
 
-# SendActivity_GreetingNewUser()
-[Activity
-    Attachments = ${SendActivity_GreetingNewUser_attachment_heroCard()}
-]
-
-# SendActivity_GreetingNewUser_attachment_heroCard()
-[HeroCard
-  text = ${GreetingNewUser_text()}
-  buttons = ${GreetingBotTourIntent_action()}
-]
-
 # SendActivity_GreetingReturningUser()
 [Activity
+    Text = ${SendActivity_GreetingReturningUser_text()}
     Attachments = ${SendActivity_GreetingReturningUser_attachment_heroCard()}
 ]
 
@@ -132,3 +122,28 @@
 
 # SendActivity_ChooseNoIntent()
 - Sure, no worries.
+
+# SendActivity_GreetingReturningUser_text()
+- Welcome to Liea!
+# SendActivity_XZRD8m()
+[Activity
+    Text = ${SendActivity_XZRD8m_text()}
+]
+
+# SendActivity_XZRD8m_text()
+- Welcome to Liea
+# SendActivity_Fg60cg()
+[Activity
+    Text = ${SendActivity_Fg60cg_text()}
+]
+
+# SendActivity_Fg60cg_text()
+- this is a greeting intent!
+# TextInput_Prompt_QIWTjl()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_lOQB1X()
+- ${expandText(@answer)}

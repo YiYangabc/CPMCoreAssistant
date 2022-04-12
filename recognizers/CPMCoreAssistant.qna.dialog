@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_CPMCoreAssistant",
+  "recognizers": {
+    "en-us": "CPMCoreAssistant.en-us.qna",
+    "": "CPMCoreAssistant.en-us.qna"
+  }
+}
