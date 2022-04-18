@@ -510,6 +510,151 @@
           ]
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "TMjftF",
+        "name": "Cascade"
+      },
+      "intent": "Cascade",
+      "entities": []
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "2VrVMQ",
+        "name": "ChangePassword"
+      },
+      "intent": "ChangePassword"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "YWeoAI",
+        "name": "DeviceEncryption"
+      },
+      "intent": "DeviceEncryption"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "xXQUZO",
+        "name": "DeviceLock"
+      },
+      "intent": "DeviceLock"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Zi0ViU",
+        "name": "GenesysLogin"
+      },
+      "intent": "GenesysLogin"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "t5PUS8",
+        "name": "Intune"
+      },
+      "intent": "Intune"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Cgk77j",
+        "name": "LeadTimes"
+      },
+      "intent": "LeadTimes"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "vkwukH",
+        "name": "MFAs"
+      },
+      "intent": "MFAs"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "D583o3",
+        "name": "MicrosoftOffice"
+      },
+      "intent": "MicrosoftOffice"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "SwtTYF",
+        "name": "OpenTicket"
+      },
+      "intent": "OpenTicket"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "NqyA3M",
+        "name": "Phishing"
+      },
+      "intent": "Phishing"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "hiWMbN",
+        "name": "Popups"
+      },
+      "intent": "Popups"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "NLDFWr",
+        "name": "RetentionPolicy"
+      },
+      "intent": "RetentionPolicy"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "UiCYGn",
+        "name": "Salesforce"
+      },
+      "intent": "Salesforce"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "z3aIkN",
+        "name": "Uniflow"
+      },
+      "intent": "Uniflow"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "KwiCVh",
+        "name": "WFH"
+      },
+      "intent": "WFH"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "jutTnT",
+        "name": "Wifi"
+      },
+      "intent": "Wifi"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "y3F8u2",
+        "name": "Yubico"
+      },
+      "intent": "Yubico"
     }
   ],
   "generator": "CPMCoreAssistant.lg",

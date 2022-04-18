@@ -17,7 +17,25 @@
       "": [
         "ChitchatDialog.en-us"
       ],
-      "Goodbye": ""
+      "Goodbye": "",
+      "Cascade": "",
+      "ChangePassword": "",
+      "DeviceEncryption": "",
+      "DeviceLock": "",
+      "GenesysLogin": "",
+      "Intune": "",
+      "LeadTimes": "",
+      "MFAs": "",
+      "MicrosoftOffice": "",
+      "OpenTicket": "",
+      "Phishing": "",
+      "Popups": "",
+      "RetentionPolicy": "",
+      "Salesforce": "",
+      "Uniflow": "",
+      "WFH": "",
+      "Wifi": "",
+      "Yubico": ""
     }
   }
 }
