@@ -1,38 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yiyang1\\CPMCoreAssistant\\CPMCoreAssistant\\CPMCoreAssistant.csproj": {}
+    "C:\\Users\\jatooles\\OneDrive - Microsoft\\Desktop\\Desktop Folder\\CPMCoreAssistant\\CPMCoreAssistant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yiyang1\\CPMCoreAssistant\\CPMCoreAssistant\\CPMCoreAssistant.csproj": {
+    "C:\\Users\\jatooles\\OneDrive - Microsoft\\Desktop\\Desktop Folder\\CPMCoreAssistant\\CPMCoreAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yiyang1\\CPMCoreAssistant\\CPMCoreAssistant\\CPMCoreAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\jatooles\\OneDrive - Microsoft\\Desktop\\Desktop Folder\\CPMCoreAssistant\\CPMCoreAssistant.csproj",
         "projectName": "CPMCoreAssistant",
-        "projectPath": "C:\\Users\\yiyang1\\CPMCoreAssistant\\CPMCoreAssistant\\CPMCoreAssistant.csproj",
-        "packagesPath": "C:\\Users\\yiyang1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yiyang1\\CPMCoreAssistant\\CPMCoreAssistant\\obj\\",
+        "projectPath": "C:\\Users\\jatooles\\OneDrive - Microsoft\\Desktop\\Desktop Folder\\CPMCoreAssistant\\CPMCoreAssistant.csproj",
+        "packagesPath": "C:\\Users\\jatooles\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jatooles\\OneDrive - Microsoft\\Desktop\\Desktop Folder\\CPMCoreAssistant\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yiyang1\\CPMCoreAssistant\\CPMCoreAssistant\\NuGet.Config",
-          "C:\\Users\\yiyang1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\jatooles\\OneDrive - Microsoft\\Desktop\\Desktop Folder\\CPMCoreAssistant\\NuGet.Config",
+          "C:\\Users\\jatooles\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://botbuilder.myget.org/F/botbuilder-v4-dotnet-daily/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -44,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -85,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.212\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.418\\RuntimeIdentifierGraph.json"
         }
       }
     }

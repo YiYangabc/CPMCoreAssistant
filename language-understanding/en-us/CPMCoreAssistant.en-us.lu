@@ -64,8 +64,6 @@
 - update account
 - update details
 - update phone number
-
-
 # ChangePassword
 - change {@Device=laptop} password
 - change my login
@@ -76,9 +74,8 @@
 - password reset
 - update password
 
-
-@ intent ChangePassword usesFeatures Computer,Device,Login
-
+@ ml Device
+@ ml Login
 # DeviceEncryption
 - bitlocker
 - configure bitlocker password
@@ -92,9 +89,7 @@
 - windows bitlocker
 - windows encryption
 
-
-@ intent DeviceEncryption usesFeatures Computer,Encrpytion,Device
-
+@ml Device
 # DeviceLock
 - can't get into my {@Device=laptop}
 - computrace
@@ -106,9 +101,7 @@
 - my {@Device=device} is frozen
 - unencrypted
 
-
-@ intent DeviceLock usesFeatures Lock,Computer,Device
-
+@ml Device
 # Genesys
 - bad line genesys
 - genesys call quality
@@ -120,9 +113,6 @@
 - no sound in genesys
 - poor call quality
 
-
-@ intent Genesys usesFeatures Computer,Genesys
-
 # GenesysLogin
 - can't log into genesys
 - can't log into purecloud
@@ -133,9 +123,7 @@
 - sign into genesys
 - sign into purecloud
 
-
-@ intent GenesysLogin usesFeatures Login,Genesys
-
+@ml Login
 # Intune
 - {@Device=android}
 - broken {@Device=ipad}
@@ -163,9 +151,7 @@
 - problem with my {@Device=tablet}
 - teams on {@Device=phone}
 
-
-@ intent Intune usesFeatures Device,Mobile
-
+@ml Device
 # LeadTimes
 - how long will it take to get a {@Device=laptop}
 - how long will it take to get a new {@Device=phone}
@@ -174,9 +160,8 @@
 - what is the lead time on a {@Device=mobile}
 - what is the lead time on a {@Device=phone}
 
-
-@ intent LeadTimes usesFeatures Computer,Device,Mobile,datetimeV2
-
+@ml Device
+@prebuilt datetimeV2
 # Mailbox
 - access shared mailbox
 - get a mailbox
@@ -189,9 +174,6 @@
 - outlook mailbox
 - remove from mailbox
 - shared mailbox
-
-
-@ intent Mailbox usesFeatures email,mailbox
 
 # MFAs
 - can't get into training
@@ -207,9 +189,8 @@
 - reset okta
 - reset okta verify
 
-
-@ intent MFAs usesFeatures Computer,MFA,Login,Microsoft,Microsoft
-
+@ml MFA
+@ml Login
 # MicrosoftOffice
 - issue with {@Microsoft=o365}
 - lost my {@Microsoft=office} license
@@ -218,18 +199,13 @@
 - problem with {@Microsoft=powerpoint}
 - problem with {@Microsoft=word}
 
-
-@ intent MicrosoftOffice usesFeatures Computer,Microsoft,Microsoft
-
+@ml Microsoft
 # NewProject
 - new business
 - new client
 - new project
 - project request
 - set up new campaign
-
-
-@ intent NewProject usesFeatures Computer,Project
 
 # OpenTicket
 - add to a distribution group
@@ -260,10 +236,6 @@
 - team leader
 - triage
 - troubleshooting
-
-
-@ intent OpenTicket usesFeature Computer
-
 # Phishing
 - malware
 - phishing
@@ -273,9 +245,7 @@
 - report suspicious email
 - weird email
 
-
-@ intent Phishing usesFeatures Computer,email
-
+@ prebuilt email
 # PopUps
 - chrome pop ups
 - disable pop ups
@@ -283,9 +253,6 @@
 - pop up blocker
 - pop ups blocked
 - popups
-
-
-@ intent PopUps usesFeatures Computer,Popups
 
 # RetentionPolicy
 - email disappeared
@@ -296,17 +263,13 @@
 - teams retention policy
 - where are my emails
 
-
-@ intent RetentionPolicy usesFeatures Computer,email
-
+@ prebuilt email
 # Salesforce
 - i can't log into salesforce
 - sales force login
 - salesforce login
 
-
-@ intent Salesforce usesFeatures Computer,Login
-
+@ml Login
 # UniflowPrint
 - add printer
 - how do i print in the office
@@ -315,18 +278,12 @@
 - printing in the office
 - uniflow
 
-
-@ intent UniflowPrint usesFeatures Computer,Print
-
 # WFH Device
 - home computer
 - setup purecloud
 - wfh
 - wfh laptop
 - work from home
-
-
-@ intent "WFH Device" usesFeatures Computer,Device
 
 # WiFi
 - barcelona {@Wifi=wifi}
@@ -343,9 +300,6 @@
 - {@Wifi=wifi} pasword
 - {@Wifi=wireless internet}
 
-
-@ intent WiFi usesFeatures Computer,Login,Wifi,Wifi
-
 # Yubico
 - {@Device=computer} token
 - configure mfa with yubikey
@@ -356,69 +310,45 @@
 - yubico
 - yubikey
 
+@ml Device
+# Popups
+- chrome pop ups
+- disable pop ups
+- make pop ups show
+- pop up blocker
+- pop ups blocked
+- popups
 
-@ intent Yubico usesFeatures Computer,Yubikey,MFA
+# Uniflow
+- add printer
+- how do i print in the office
+- how to print
+- print in thame
+- printing in the office
+- uniflow
 
-> # Entity definitions
+# WFH
+- home computer
+- setup purecloud
+- wfh
+- wfh laptop
+- work from home
 
-@ ml Device usesFeature Computer
+@ml Device
 
-@ ml Microsoft
+# Wifi
+- barcelona {@Wifi=wifi}
+- cpm4clients
+- {@Wifi=internet} login
+- ireland {@Wifi=wifi}
+- {@Device=laptop} {@Wifi=internet}
+- staff password
+- staff {@Wifi=wifi}
+- staff {@Wifi=wifi} password
+- thame {@Wifi=wifi}
+- warrington {@Wifi=wifi}
+- {@Wifi=wifi}
+- {@Wifi=wifi} pasword
+- {@Wifi=wireless internet}
 
-@ ml Wifi
-
-
-> # PREBUILT Entity definitions
-
-@ prebuilt datetimeV2
-
-@ prebuilt email
-
-
-> # Phrase list definitions
-
-@ phraselist Lock(interchangeable) disabledForAllModels = 
-	- freeze,lock,locked,frozen,unecrypted,encrpyted
-
-@ phraselist Computer(interchangeable) disabledForAllModels = 
-	- device,laptop,computer,notebook,workstation,desktop,machine
-
-@ phraselist Encrpytion(interchangeable) disabledForAllModels = 
-	- encoded,encrypt,encryption,bitlocker
-
-@ phraselist Yubikey(interchangeable) disabledForAllModels = 
-	- hardware token,token,yubico,yubikey,ubk,key
-
-@ phraselist MFA(interchangeable) disabledForAllModels = 
-	- multifactor,multi-factor,mfa,mutlifactor identification,multifactor authentication,mutli-factor identifaction,multi-factor authentication,multi factor,multi factor authentication,multi factor identification
-
-@ phraselist Login(interchangeable) disabledForAllModels = 
-	- sign in,sign-in,log on,logon,signin,log-on,login,log in,get in,log into,sign into,get into,password,access
-
-@ phraselist Genesys(interchangeable) disabledForAllModels = 
-	- genesys,purecloud,telephony
-
-@ phraselist Mobile(interchangeable) disabledForAllModels = 
-	- mobile,phone,tablet,ipad,android,ios,cell,cellphone,mobile phone
-
-@ phraselist Microsoft(interchangeable) disabledForAllModels = 
-	- Microsoft,Office,PowerPoint,Excel,Word,Outlook,O365
-
-@ phraselist Print(interchangeable) disabledForAllModels = 
-	- print,printing,printer,inkjet,scanner,copier,copy machine,print machine,printers,scanners,copiers,copy machines,inkjets,uniflow
-
-@ phraselist Popups(interchangeable) disabledForAllModels = 
-	- pop-up,popup,popups,pop-ups,ads,adverts,advertisements,advertisement,advert,ad
-
-@ phraselist Wifi(interchangeable) disabledForAllModels = 
-	- wifi,internet,wireless internet
-
-@ phraselist Project(interchangeable) disabledForAllModels = 
-	- client,project,business,campaign,request,work,work request
-
-@ phraselist mailbox(interchangeable) disabledForAllModels = 
-	- mailbox,postbox,letter box,letterbox,post box,post office box,letter-box,mail box,mail slot,post,po box,mail drop,mailboxes,post-office box,letter drop
-
-> # List entities
-
-> # RegEx entities
+@ml Wifi
